@@ -1,28 +1,28 @@
 {
-    "wallpaper": "/home/glopez/Images/alex-kim-d52i7z91qaQ-unsplash.jpg",
+    "wallpaper": "/home/glopez/Images/jovs-beauty-soQiTdOWt38-unsplash.jpg",
     "alpha": "100",
 
     "special": {
-        "background": "#030303",
-        "foreground": "#EEE3E6",
-        "cursor": "#EEE3E6"
+        "background": "#000607",
+        "foreground": "#FCEFE8",
+        "cursor": "#FCEFE8"
     },
     "colors": {
-        "color0": "#090B0C",
-        "color1": "#7C4537",
-        "color2": "#3F5A6B",
-        "color3": "#876651",
-        "color4": "#76707C",
-        "color5": "#577793",
-        "color6": "#9C848A",
-        "color7": "#DFCFD3",
-        "color8": "#9C9093",
-        "color9": "#A65D4A",
-        "color10": "#54788F",
-        "color11": "#B5886D",
-        "color12": "#9E96A6",
-        "color13": "#749FC5",
-        "color14": "#D0B1B8",
-        "color15": "#B2A5A8"
+        "color0": "#000607",
+        "color1": "#5F5C53",
+        "color2": "#5A7883",
+        "color3": "#8B735F",
+        "color4": "#A56863",
+        "color5": "#928E92",
+        "color6": "#BA9D8F",
+        "color7": "#F3E0D6",
+        "color8": "#AA9C95",
+        "color9": "#7F7B6F",
+        "color10": "#79A0AF",
+        "color11": "#BA9A7F",
+        "color12": "#DC8B84",
+        "color13": "#C3BEC3",
+        "color14": "#F9D2BF",
+        "color15": "#C2B3AB"
     }
 }

@@ -1,0 +1,14 @@
+"filename", "language", "Go Checksum File", "SQL", "Go Module File", "Go", "comment", "blank", "total"
+"/home/glopez/go/src/kanban_board_new/cmd/cli/dstartup.go", "Go", 0, 0, 0, 27, 0, 3, 30
+"/home/glopez/go/src/kanban_board_new/cmd/cli/main.go", "Go", 0, 0, 0, 11, 0, 4, 15
+"/home/glopez/go/src/kanban_board_new/cmd/config/config.go", "Go", 0, 0, 0, 42, 0, 14, 56
+"/home/glopez/go/src/kanban_board_new/go.mod", "Go Module File", 0, 0, 1, 0, 0, 0, 1
+"/home/glopez/go/src/kanban_board_new/go.sum", "Go Checksum File", 2, 0, 0, 0, 0, 0, 2
+"/home/glopez/go/src/kanban_board_new/internals/data/dbmodels/taskmodels.go", "Go", 0, 0, 0, 85, 0, 24, 109
+"/home/glopez/go/src/kanban_board_new/internals/models/column/column.go", "Go", 0, 0, 0, 12, 0, 4, 16
+"/home/glopez/go/src/kanban_board_new/internals/models/column/task/encoder.go", "Go", 0, 0, 0, -22, 0, -6, -28
+"/home/glopez/go/src/kanban_board_new/internals/models/column/task/task.go", "Go", 0, 0, 0, 6, 0, 2, 8
+"/home/glopez/go/src/kanban_board_new/internals/models/form/form.go", "Go", 0, 0, 0, 1, 0, 0, 1
+"/home/glopez/go/src/kanban_board_new/migrations/000001_create_tasks_table.down.sql", "SQL", 0, 1, 0, 0, 0, 0, 1
+"/home/glopez/go/src/kanban_board_new/migrations/000001_create_tasks_table.up.sql", "SQL", 0, 8, 0, 0, 0, 0, 8
+"Total", "-", 2, 9, 1, 162, 0, 45, 219

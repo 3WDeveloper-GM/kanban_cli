@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/glopez/Images/eberhard-grossgasteiger-YI9fiqgs9Nk-unsplash.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#020506",
+        "foreground": "#EFE8DE",
+        "cursor": "#EFE8DE"
+    },
+    "colors": {
+        "color0": "#020506",
+        "color1": "#243A42",
+        "color2": "#3D5A65",
+        "color3": "#8D6F4E",
+        "color4": "#5E8190",
+        "color5": "#797E7A",
+        "color6": "#9D8E78",
+        "color7": "#E0D6C7",
+        "color8": "#9C958B",
+        "color9": "#304E59",
+        "color10": "#527887",
+        "color11": "#BD9569",
+        "color12": "#7EADC0",
+        "color13": "#A2A9A3",
+        "color14": "#D2BEA1",
+        "color15": "#B3AB9F"
+    }
+}

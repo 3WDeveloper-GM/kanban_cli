@@ -1,0 +1,14 @@
+"filename", "language", "Go Checksum File", "Go", "Go Module File", "comment", "blank", "total"
+"/home/glopez/go/src/kanban_board_new/cmd/cli/main.go", "Go", 0, 15, 0, 0, 8, 23
+"/home/glopez/go/src/kanban_board_new/cmd/config/config.go", "Go", 0, 126, 0, 0, 21, 147
+"/home/glopez/go/src/kanban_board_new/go.mod", "Go Module File", 0, 0, 26, 0, 4, 30
+"/home/glopez/go/src/kanban_board_new/go.sum", "Go Checksum File", 46, 0, 0, 0, 1, 47
+"/home/glopez/go/src/kanban_board_new/internals/models/column/column.go", "Go", 0, 104, 0, 0, 23, 127
+"/home/glopez/go/src/kanban_board_new/internals/models/column/styles.go", "Go", 0, 24, 0, 0, 5, 29
+"/home/glopez/go/src/kanban_board_new/internals/models/column/task/dummy.go", "Go", 0, 25, 0, 0, 3, 28
+"/home/glopez/go/src/kanban_board_new/internals/models/column/task/encoder.go", "Go", 0, 22, 0, 0, 6, 28
+"/home/glopez/go/src/kanban_board_new/internals/models/column/task/task.go", "Go", 0, 37, 0, 0, 10, 47
+"/home/glopez/go/src/kanban_board_new/internals/models/form/form.go", "Go", 0, 95, 0, 0, 10, 105
+"/home/glopez/go/src/kanban_board_new/internals/models/keymap/keymap.go", "Go", 0, 75, 0, 0, 6, 81
+"/home/glopez/go/src/kanban_board_new/internals/status/status.go", "Go", 0, 45, 0, 0, 8, 53
+"Total", "-", 46, 568, 26, 0, 105, 745

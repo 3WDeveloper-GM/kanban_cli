@@ -78,6 +78,7 @@ func (m Model) View() string {
 	if !m.Confirms {
 		return lipgloss.JoinVertical(
 			lipgloss.Center,
+			m.Title.Placeholder,
 			"Please press 'Enter' to start the program",
 		)
 	} else {

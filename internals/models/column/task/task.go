@@ -42,7 +42,8 @@ func (t Task) Title() string {
 }
 
 func (t Task) Description() string {
-	return t.description
+	description := t.description + " created at:" + t.CreatedAt.Format(time.RFC1123)
+	return description
 }
 
 func (t *Task) GetStatus() *status.Status {

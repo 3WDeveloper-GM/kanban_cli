@@ -42,7 +42,7 @@ func (t Task) Title() string {
 }
 
 func (t Task) Description() string {
-	description := t.description + " created at:" + t.CreatedAt.Format(time.RFC1123)
+	description := t.description
 	return description
 }
 

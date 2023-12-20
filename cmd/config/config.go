@@ -11,6 +11,7 @@ import (
 	"github.com/3WDeveloper-GM/kanban_board_new/internals/models/column/task"
 	"github.com/3WDeveloper-GM/kanban_board_new/internals/models/form"
 	"github.com/3WDeveloper-GM/kanban_board_new/internals/models/keymap"
+	splashscreen "github.com/3WDeveloper-GM/kanban_board_new/internals/models/splash-screen"
 	"github.com/3WDeveloper-GM/kanban_board_new/internals/status"
 	"github.com/charmbracelet/bubbles/help"
 	"github.com/charmbracelet/bubbles/key"
@@ -22,14 +23,15 @@ import (
 const margin = 4
 
 type Model struct {
-	DSN      string
-	Models   dbmodels.TaskModel
-	Columns  []column.Model
-	form     *form.Model
-	help     help.Model
-	focused  status.Status
-	quitting bool
-	loading  bool
+	DSN          string
+	Models       dbmodels.TaskModel
+	Columns      []column.Model
+	form         *form.Model
+	help         help.Model
+	focused      status.Status
+	splashScreen splashscreen.Model
+	quitting     bool
+	loading      bool
 }
 
 func (m Model) Focused() status.Status {
@@ -40,8 +42,9 @@ func NewModel() *Model {
 	help := help.New()
 	help.ShowAll = true
 	return &Model{
-		help:    help,
-		focused: status.Todo,
+		help:         help,
+		focused:      status.Todo,
+		splashScreen: *splashscreen.SplashScreen(),
 	}
 }
 
@@ -69,13 +72,20 @@ func (m *Model) InitBoard(width, height int) {
 
 }
 
+type initSplashScreen struct{}
+
 func (m Model) Init() tea.Cmd {
-	return nil
+	return func() tea.Msg { return initSplashScreen{} }
 }
 
 func (m *Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	switch msg := msg.(type) {
+	case initSplashScreen:
+		m.splashScreen.Board = m
+		return m.splashScreen.Update(nil)
+
 	case tea.WindowSizeMsg:
+
 		var cmd tea.Cmd
 		var cmds []tea.Cmd
 		m.help.Width = msg.Width - margin
@@ -88,6 +98,10 @@ func (m *Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		m.loading = true
 		return m, tea.Batch(cmds...)
 
+	case splashscreen.Model:
+		if msg.Confirms {
+			return m.Update(tea.WindowSizeMsg{})
+		}
 	case column.RemovedItemMsg:
 		m.Models.Delete(msg.ID)
 
@@ -185,8 +199,9 @@ func (m *Model) View() string {
 	}
 
 	if !m.loading {
-		return "loading..."
+		return "loading"
 	}
+
 	board := lipgloss.JoinHorizontal(
 		lipgloss.Left,
 		m.Columns[status.Todo].View(),

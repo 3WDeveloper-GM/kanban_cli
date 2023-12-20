@@ -14,7 +14,6 @@ import (
 func main() {
 
 	config.ClearTerminal()
-
 	b := config.NewModel()
 
 	flag.StringVar(&b.DSN, "db", os.Getenv("KANBAN_DSN"), "The kanbban DB DSN string.")

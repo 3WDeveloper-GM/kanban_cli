@@ -15,6 +15,7 @@ type Keymap struct {
 	Back   key.Binding
 	Enter  key.Binding
 	Search key.Binding
+	Space  key.Binding
 }
 
 var KeyRing = Keymap{
@@ -65,6 +66,10 @@ var KeyRing = Keymap{
 	Search: key.NewBinding(
 		key.WithKeys("S", "/"),
 		key.WithHelp("S", "save"),
+	),
+	Space: key.NewBinding(
+		key.WithKeys("space"),
+		key.WithHelp("space", " "),
 	),
 }
 
